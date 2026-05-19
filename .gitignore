@@ -1,0 +1,43 @@
+# ── Secrets ──────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Python ───────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+.pytest_cache/
+.mypy_cache/
+
+# ── IDE / tooling ────────────────────────────────────────────────────
+.claude/
+.vscode/
+.idea/
+*.swp
+
+# ── Generated outputs (may contain test PHI even when synthetic) ─────
+output_logs/
+*.transcript.json
+*.summary.json
+
+# ── Models / indexes (regenerable; not for SCM) ──────────────────────
+rag/index/
+*.npy
+*.bin
+*.gguf
+*.safetensors
+
+# ── Local internal docs (Stanford drafts, not for public repo) ───────
+Draft_CDH_LLM_LDCT_Final_*.pdf
+
+# ── Telephony tunnel binary + logs ───────────────────────────────────
+cloudflared.exe
+cloudflared.log
+*.log
+
+# ── OS / desktop artifacts ───────────────────────────────────────────
+Thumbs.db
+.DS_Store
